@@ -1,0 +1,16 @@
+DTSysConfigEntity = { Id = 0, Desc = "", Name = "", Type = "", Value = "" }
+
+DTSysConfigEntity.__index = DTSysConfigEntity;
+
+function DTSysConfigEntity.New(Id, Desc, Name, Type, Value)
+    local self = { };
+    setmetatable(self, DTSysConfigEntity);
+
+    self.Id = Id;
+    self.Desc = Desc;
+    self.Name = Name;
+    self.Type = Type;
+    self.Value = Value;
+
+    return self;
+end

@@ -1,0 +1,15 @@
+DTTaskEntity = { Id = 0, Name = "", Status = 0, Content = "" }
+
+DTTaskEntity.__index = DTTaskEntity;
+
+function DTTaskEntity.New(Id, Name, Status, Content)
+    local self = { };
+    setmetatable(self, DTTaskEntity);
+
+    self.Id = Id;
+    self.Name = Name;
+    self.Status = Status;
+    self.Content = Content;
+
+    return self;
+end

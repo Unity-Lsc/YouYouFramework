@@ -1,0 +1,16 @@
+DTSysLocalizationEntity = { Id = 0, Desc = "", Key = "", Chinese = "", English = "" }
+
+DTSysLocalizationEntity.__index = DTSysLocalizationEntity;
+
+function DTSysLocalizationEntity.New(Id, Desc, Key, Chinese, English)
+    local self = { };
+    setmetatable(self, DTSysLocalizationEntity);
+
+    self.Id = Id;
+    self.Desc = Desc;
+    self.Key = Key;
+    self.Chinese = Chinese;
+    self.English = English;
+
+    return self;
+end

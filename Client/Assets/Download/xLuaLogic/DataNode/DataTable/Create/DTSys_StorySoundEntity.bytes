@@ -1,0 +1,15 @@
+DTSys_StorySoundEntity = { Id = 0, Desc = "", AssetPath_CN = "", AssetPath_EN = "" }
+
+DTSys_StorySoundEntity.__index = DTSys_StorySoundEntity;
+
+function DTSys_StorySoundEntity.New(Id, Desc, AssetPath_CN, AssetPath_EN)
+    local self = { };
+    setmetatable(self, DTSys_StorySoundEntity);
+
+    self.Id = Id;
+    self.Desc = Desc;
+    self.AssetPath_CN = AssetPath_CN;
+    self.AssetPath_EN = AssetPath_EN;
+
+    return self;
+end

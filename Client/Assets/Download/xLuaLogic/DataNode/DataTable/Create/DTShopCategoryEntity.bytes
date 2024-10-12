@@ -1,0 +1,13 @@
+DTShopCategoryEntity = { Id = 0, Name = "" }
+
+DTShopCategoryEntity.__index = DTShopCategoryEntity;
+
+function DTShopCategoryEntity.New(Id, Name)
+    local self = { };
+    setmetatable(self, DTShopCategoryEntity);
+
+    self.Id = Id;
+    self.Name = Name;
+
+    return self;
+end

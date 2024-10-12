@@ -1,0 +1,44 @@
+--数据访问
+DTShopDBModel = { }
+
+local this = DTShopDBModel;
+
+local dtshopTable = { }; --定义表格
+
+function DTShopDBModel.LoadList()
+    GameInit.AddTotalLoadTableCount();
+    CS.YouYou.GameEntry.Lua:LoadDataTable("DTShop", this.LoadFormMS);
+end
+
+function DTShopDBModel.LoadFormMS(ms)
+    local rows = ms:ReadInt();
+    ms:ReadInt();
+
+    for i = 1, rows, 1 do
+        dtshopTable[#dtshopTable + 1] = DTShopEntity.New(
+                ms:ReadInt(),
+                ms:ReadInt(),
+                ms:ReadInt(),
+                ms:ReadInt(),
+                ms:ReadInt(),
+                ms:ReadInt(),
+                ms:ReadInt()
+        );
+    end
+    GameInit.LoadOneTableComplete();
+end
+
+function DTShopDBModel.GetList()
+    return dtshopTable;
+end
+
+function DTShopDBModel.GetEntity(id)
+    local ret = nil;
+    for i = 1, #dtshopTable, 1 do
+        if (dtshopTable[i].Id == id) then
+            ret = dtshopTable[i];
+            break;
+        end
+    end
+    return ret;
+end

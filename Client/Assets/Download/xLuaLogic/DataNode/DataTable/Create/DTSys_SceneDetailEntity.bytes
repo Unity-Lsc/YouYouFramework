@@ -1,0 +1,16 @@
+DTSys_SceneDetailEntity = { Id = 0, SceneId = 0, SceneName = "", ScenePath = "", SceneGrade = 0 }
+
+DTSys_SceneDetailEntity.__index = DTSys_SceneDetailEntity;
+
+function DTSys_SceneDetailEntity.New(Id, SceneId, SceneName, ScenePath, SceneGrade)
+    local self = { };
+    setmetatable(self, DTSys_SceneDetailEntity);
+
+    self.Id = Id;
+    self.SceneId = SceneId;
+    self.SceneName = SceneName;
+    self.ScenePath = ScenePath;
+    self.SceneGrade = SceneGrade;
+
+    return self;
+end
