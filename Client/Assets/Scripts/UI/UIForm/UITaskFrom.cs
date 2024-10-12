@@ -13,10 +13,13 @@ public class UITaskFrom : UIFormBase
     private Button mBtnClose;
     private Button mBtnReceive;
 
+    private UIScroller mScroller;
+
     protected override void OnAwake() {
         base.OnAwake();
         mBtnClose = transform.Find("Center/btnClose").GetComponent<Button>();
         mBtnReceive = transform.Find("Center/imgRight/btnReceive").GetComponent<Button>();
+        mScroller = transform.Find("Center/imgLeft/LeftView").GetComponent<UIScroller>();
     }
 
     protected override void OnInit(object userData) {
@@ -28,10 +31,14 @@ public class UITaskFrom : UIFormBase
             Debug.Log("接受任务");
             Close();
         });
+        mScroller.OnItemCreate = OnItemCreate;
+        mScroller.DataCount = 20;
+        mScroller.ResetScroller();
     }
 
     private void OnItemCreate(int index, GameObject obj) {
-
+        obj.gameObject.name = index.ToString();
+        obj.transform.Find("txt").GetComponent<Text>().text = "任务:" + index;
     }
 
     

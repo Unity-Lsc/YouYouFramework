@@ -635,7 +635,10 @@ PlayerSettings:
   webGLMemoryGeometricGrowthStep: 0.2
   webGLMemoryGeometricGrowthCap: 96
   webGLPowerPreference: 2
-  scriptingDefineSymbols: {}
+  scriptingDefineSymbols:
+    Android: DEBUG_LOG;DEBUG_LOG_PROTO;STAT_TD;DISABLE_ASSETBUNDLE
+    Standalone: DEBUG_LOG;DEBUG_LOG_PROTO;STAT_TD;DISABLE_ASSETBUNDLE
+    iPhone: DEBUG_LOG;DEBUG_LOG_PROTO;STAT_TD;DISABLE_ASSETBUNDLE
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend:
