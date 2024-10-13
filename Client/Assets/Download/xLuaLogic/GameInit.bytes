@@ -1,0 +1,12 @@
+print('启动GameInit.lua');
+
+GameInit = {};
+local this = GameInit;
+
+function GameInit.Init()
+        print('GameInit.Init');
+end
+
+function GameInit.OnStart()
+        
+end
