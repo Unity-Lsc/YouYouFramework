@@ -1,4 +1,3 @@
-
 using System.Threading.Tasks;
 
 namespace YouYou
@@ -23,6 +22,7 @@ namespace YouYou
 
         public DTEquipDBModel DTEquipDBModel { get; private set; }
         public DTShopDBModel DTShopDBModel { get; private set; }
+        public DTTaskDBModel DTTaskDBModel { get; private set; }
 
         public DataTableManager() {
             InitDBModel();
@@ -47,6 +47,7 @@ namespace YouYou
 
             DTEquipDBModel = new DTEquipDBModel();
             DTShopDBModel = new DTShopDBModel();
+            DTTaskDBModel = new DTTaskDBModel();
         }
 
         /// <summary>
@@ -77,6 +78,7 @@ namespace YouYou
 
             DTEquipDBModel.LoadData();
             DTShopDBModel.LoadData();
+            DTTaskDBModel.LoadData();
 
             //load完毕
             GameEntry.Event.CommonEvent.Dispatch(SystemEventId.LoadDataTableComplete);   
@@ -98,6 +100,7 @@ namespace YouYou
 
             DTEquipDBModel.Clear();
             DTShopDBModel.Clear();
+            DTTaskDBModel.Clear();
         }
 
     }

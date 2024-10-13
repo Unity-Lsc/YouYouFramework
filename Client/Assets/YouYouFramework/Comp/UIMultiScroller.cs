@@ -97,7 +97,8 @@ public class UIMultiScroller : MonoBehaviour
         _index = -1;
         UIScrollIndex[] arr = _content.GetComponentsInChildren<UIScrollIndex>();
         for (int i = 0; i < arr.Length; i++) {
-            DestroyImmediate(arr[i].gameObject);
+            if (arr[i] && arr[i].gameObject)
+                DestroyImmediate(arr[i].gameObject);
         }
 
         _itemList?.Clear();

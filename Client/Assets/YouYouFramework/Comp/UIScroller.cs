@@ -115,12 +115,14 @@ public class UIScroller : MonoBehaviour
 
         UIScrollIndex[] arr = _content.GetComponentsInChildren<UIScrollIndex>();
         for (int i = 0; i < arr.Length; i++) {
-            DestroyImmediate(arr[i].gameObject);
+            if (arr[i] && arr[i].gameObject)
+                DestroyImmediate(arr[i].gameObject);
         }
 
         _itemList?.Clear();
         _unUsedItemQueue?.Clear();
         _content.anchoredPosition = new Vector2(0, 1f);
+
         OnValueChange(Vector2.zero);
     }
 

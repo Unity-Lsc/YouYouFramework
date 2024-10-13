@@ -26,8 +26,9 @@ public class UIExample : MonoBehaviour
             //rect.localScale = Vector3.one;
             //rect.offsetMin = Vector2.zero;
             //rect.offsetMax = Vector2.zero;
-        }else if (Input.GetKeyUp(KeyCode.S)) {
-            GameEntry.UI.CloseUIForm(UIFormId.UITask);
+        }
+        if (Input.GetKeyUp(KeyCode.S)) {
+            GameEntry.Data.UserDataManager.AddList();
         }
     }
 

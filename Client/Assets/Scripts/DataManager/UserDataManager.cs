@@ -15,10 +15,16 @@ public class UserDataManager : IDisposable
 
     public UserDataManager() {
         ServerTaskList = new List<ServerTaskEntity>();
+
+        //测试代码
+        ServerTaskList.Add(new ServerTaskEntity() { Id = 1001, Status = 0 });
+        ServerTaskList.Add(new ServerTaskEntity() { Id = 1002, Status = 0 });
+        ServerTaskList.Add(new ServerTaskEntity() { Id = 1003, Status = 0 });
+        ServerTaskList.Add(new ServerTaskEntity() { Id = 1004, Status = 0 });
     }
 
-    public void ReceiveTask() {
-        ServerTaskList.Add(new ServerTaskEntity() { Id = 1001, Status = 0 });
+    public void AddList() {
+        ServerTaskList.Add(new ServerTaskEntity() { Id = 1005, Status = 0 });
     }
 
     /// <summary>
