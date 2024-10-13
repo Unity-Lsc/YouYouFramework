@@ -1670,6 +1670,7 @@ GameObject:
   - component: {fileID: 3971017206021157679}
   - component: {fileID: 5871136629351718216}
   - component: {fileID: 873717976425945342}
+  - component: {fileID: -262341189266583309}
   m_Layer: 5
   m_Name: UITask
   m_TagString: Untagged
@@ -1737,6 +1738,32 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &-262341189266583309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7734498882865937579}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0f34abbafdc2db408d4c9f2a1255526, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IsActive: 0
+  mLuaComps:
+  - Name: btnClose
+    Type: 2
+    Tran: {fileID: 3414708368451477831}
+  - Name: txtNameContent
+    Type: 5
+    Tran: {fileID: 1030433021470255558}
+  - Name: txtDesContent
+    Type: 6
+    Tran: {fileID: 4640596066609986851}
+  - Name: btnReceive
+    Type: 2
+    Tran: {fileID: 6219694687554342160}
 --- !u!1 &7744477192710277553
 GameObject:
   m_ObjectHideFlags: 0

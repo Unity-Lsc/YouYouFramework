@@ -4,9 +4,14 @@ GameInit = {};
 local this = GameInit;
 
 function GameInit.Init()
-        print('GameInit.Init');
+    print('GameInit.Init');
+    this.InitCtrlAndViews();
 end
 
-function GameInit.OnStart()
-        
+---初始化UI控制器和UI视图
+function GameInit.InitCtrlAndViews()
+
+    require('Modules/UITaskCtrl');
+    require('Modules/UITaskView');
+
 end

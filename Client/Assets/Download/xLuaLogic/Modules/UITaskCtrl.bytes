@@ -1,0 +1,22 @@
+UITaskCtrl = {};
+local this = UITaskCtrl;
+
+function UITaskCtrl.OnInit(userData)
+	UITaskView.btnClose.onClick:AddListener(this.onClickClose);
+end
+
+function UITaskCtrl.OnOpen(userData)
+	--UITaskView.txtDesContent.text = "Hello啊";
+end
+
+function UITaskCtrl.onClickClose()
+	UITaskView.LuaForm:Close();
+end
+
+function UITaskCtrl.OnClose()
+
+end
+
+function UITaskCtrl.OnBeforeDestroy()
+
+end

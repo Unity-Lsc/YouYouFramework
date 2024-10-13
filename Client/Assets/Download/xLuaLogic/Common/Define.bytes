@@ -1,0 +1,20 @@
+print('启动了Define.lua');
+
+--把常用的Unity相关的命名空间添加进来
+WWW = CS.UnityEngine.WWW;
+GameObject = CS.UnityEngine.GameObject;
+Color = CS.UnityEngine.Color;
+Vector3 = CS.UnityEngine.Vector3;
+Vector2 = CS.UnityEngine.Vector2;
+
+---UI控制器名字
+CtrlNames = {
+    UIRootCtrl
+};
+
+DBModelNames = {
+
+};
+
+
+

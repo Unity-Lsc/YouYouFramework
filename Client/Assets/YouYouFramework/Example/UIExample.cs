@@ -15,7 +15,7 @@ public class UIExample : MonoBehaviour
     {
         if (Input.GetKeyUp(KeyCode.W)) {
             //GameEntry.UI.OpenUIForm(UIFormId.UITask);
-            GameEntry.UI.OpenUIForm<UITaskFrom>(UIFormId.UITask);
+            GameEntry.UI.OpenUIForm(UIFormId.UITask);
             //GameEntry.UI.OpenUIForm<UILoadingForm>(UIFormId.UILoading);
             //Object prefab = UnityEditor.AssetDatabase.LoadAssetAtPath<GameObject>("Assets/Download/UI/UIPrefab/Loading/UILoading.prefab");
             //Debug.Log(prefab);

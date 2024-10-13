@@ -1,0 +1,46 @@
+UITaskView = {};
+local this = UITaskView;
+
+local btnCloseIndex = 0;
+local txtNameContentIndex = 1;
+local txtDesContentIndex = 2;
+local btnReceiveIndex = 3;
+
+function UITaskView.OnInit(transform, userData)
+	this.InitView(transform);
+	UITaskCtrl.OnInit(userData);
+end
+
+function UITaskView.InitView(transform)
+	--[[--找到Center容器
+	this.Center = transform:Find("Center");
+
+	--通过Find的方式查找UI组件
+	this.btnClose = this.Center:Find("btnClose"):GetComponent("UnityEngine.UI.Button");
+	this.imgRight = this.Center:Find("imgRight");
+	this.txtName = this.imgRight:Find("txtNameContent"):GetComponent("UnityEngine.UI.Text");
+	this.txtDes = this.imgRight:Find("txtDesContent"):GetComponent("UnityEngine.UI.Text");
+	this.btnReceive = this.imgRight:Find("btnReceive"):GetComponent("UnityEngine.UI.Button");
+	this.imgLeft = this.Center:Find("imgLeft");
+	--添加事件监听
+	this.btnClose.onClick:AddListener(this.OnClickClose);]]
+
+	--查找并获取组件
+	this.LuaForm = transform:GetComponent(typeof(CS.YouYou.LuaForm));
+	this.btnClose = this.LuaForm:GetLuaComp(btnCloseIndex);
+	this.txtNameContent = this.LuaForm:GetLuaComp(txtNameContentIndex);
+	this.txtDesContent = this.LuaForm:GetLuaComp(txtDesContentIndex);
+	this.btnReceive = this.LuaForm:GetLuaComp(btnReceiveIndex);
+end
+
+function UITaskView.OnOpen(userData)
+	UITaskCtrl.OnOpen(userData);
+end
+
+function UITaskView.OnClose()
+	UITaskCtrl.OnClose();
+end
+
+function UITaskView.OnBeforeDestroy()
+	UITaskCtrl.OnBeforeDestroy();
+end

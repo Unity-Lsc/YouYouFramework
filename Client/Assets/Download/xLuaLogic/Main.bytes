@@ -1,6 +1,6 @@
 --hotfix 热补丁
 --游戏启动的是,先执行热补丁的类
 
-require "Download/xLuaLogic/GameInit"
+require "GameInit"
 
 GameInit.Init();
