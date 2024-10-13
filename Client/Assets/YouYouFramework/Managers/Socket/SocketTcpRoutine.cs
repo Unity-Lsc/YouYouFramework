@@ -1,5 +1,4 @@
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Net;
 using System.Net.Sockets;
@@ -24,6 +23,16 @@ namespace YouYou
         private byte[] mReceiveBuffer = new byte[1024];
         //接收数据包的缓冲数据流
         private MMO_MemoryStream mReceiveMS = new MMO_MemoryStream();
+
+        /// <summary>
+        /// 发送用的MemoryStream
+        /// </summary>
+        private MMO_MemoryStream mSocketSendMS = new MMO_MemoryStream();
+        /// <summary>
+        /// 接收用的MemoryStream
+        /// </summary>
+        private MMO_MemoryStream mSocketReceiveMS = new MMO_MemoryStream();
+
         //接收消息的队列
         private Queue<byte[]> mReceiveQueue = new Queue<byte[]>();
         //接收消息的数量
@@ -176,7 +185,7 @@ namespace YouYou
             lock (mSendQueue) {
                 if(mSendQueue.Count > 0 || mIsHasUnDealBytes) {
                     int smallCount = 0;//拼凑的小包数量
-                    MMO_MemoryStream ms = GameEntry.Socket.CommonMemoryStream;
+                    MMO_MemoryStream ms = mSocketSendMS;
                     ms.SetLength(0);
 
                     //先处理 未处理的包
@@ -207,6 +216,9 @@ namespace YouYou
             }
         }
 
+        /// <summary>
+        /// 封装数据包
+        /// </summary>
         private byte[] MakeData(byte[] data) {
             byte[] retBuffer = null;
             //1.如果数据包的长度 大于了mCompressLen 则进行压缩
@@ -221,7 +233,7 @@ namespace YouYou
             //3.Crc校验 压缩后的
             ushort crc = Crc16.CalculateCrc16(data);
 
-            MMO_MemoryStream ms = GameEntry.Socket.CommonMemoryStream;
+            MMO_MemoryStream ms = mSocketSendMS;
             ms.SetLength(0);
 
             ms.WriteUShort((ushort)(data.Length + 3));

@@ -12,11 +12,6 @@ namespace YouYou
         private SocketManager mSocketManager;
 
         /// <summary>
-        /// 通用的MemoryStream
-        /// </summary>
-        public MMO_MemoryStream CommonMemoryStream { get; private set; }
-
-        /// <summary>
         /// 每帧最大发送数量
         /// </summary>
         [Header("每帧最大发送数量")]
@@ -38,11 +33,21 @@ namespace YouYou
         /// </summary>
         private SocketTcpRoutine mMainSocketRoutine;
 
+        /// <summary>
+        /// 发送用的MemoryStream
+        /// </summary>
+        public MMO_MemoryStream SocketSendMS { get; private set; }
+        /// <summary>
+        /// 接收用的MemoryStream
+        /// </summary>
+        public MMO_MemoryStream SocketReceiveMS { get; private set; }
+
         protected override void OnAwake() {
             base.OnAwake();
             GameEntry.RegisterUpdateComponent(this);
             mSocketManager = new SocketManager();
-            CommonMemoryStream = new MMO_MemoryStream();
+            SocketSendMS = new MMO_MemoryStream();
+            SocketReceiveMS = new MMO_MemoryStream();
         }
 
         protected override void OnStart() {
@@ -82,8 +87,11 @@ namespace YouYou
             GameEntry.Pool.EnqueueClassObject(mMainSocketRoutine);
             SocketProtoListener.RemoveProtoListener();
 
-            CommonMemoryStream.Dispose();
-            CommonMemoryStream.Close();
+            SocketSendMS.Dispose();
+            SocketReceiveMS.Dispose();
+
+            SocketSendMS.Close();
+            SocketReceiveMS.Close();
         }
 
         /// <summary>
