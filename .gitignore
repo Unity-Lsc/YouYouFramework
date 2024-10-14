@@ -9,7 +9,7 @@ Client/.vsconfig
 bin/
 obj/
 .vs/
-Client/Assets/Download/xLuaLogic/.idea
+.idea/
 Client/HybridCLRData/
 Client/Assets/HybridCLRData/
 Client/Assets/StreamingAssets/AssetBundles/
