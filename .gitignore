@@ -9,6 +9,7 @@ Client/.vsconfig
 bin/
 obj/
 .vs/
+.idea/
 Client/HybridCLRData/
 Client/Assets/HybridCLRData/
 Client/Assets/StreamingAssets/AssetBundles/
