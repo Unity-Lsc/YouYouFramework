@@ -1,15 +1,4 @@
-DTTaskEntity = { Id = 0, Name = "", Status = 0, Content = "" }
+DTTaskEntity = {Id = 0, Name = "", Status = 0, Content = ""};
 
+--这句是重定义元素的索引,就是有了这句话,这才是一个类
 DTTaskEntity.__index = DTTaskEntity;
-
-function DTTaskEntity.New(Id, Name, Status, Content)
-    local self = { };
-    setmetatable(self, DTTaskEntity);
-
-    self.Id = Id;
-    self.Name = Name;
-    self.Status = Status;
-    self.Content = Content;
-
-    return self;
-end
