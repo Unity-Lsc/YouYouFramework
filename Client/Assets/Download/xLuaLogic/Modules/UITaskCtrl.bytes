@@ -7,6 +7,14 @@ end
 
 function UITaskCtrl.OnOpen(userData)
 	--UITaskView.txtDesContent.text = "Hello啊";
+	local list = DTTaskDBModel.GetList();
+	for _ = 1, #list do
+		local entity = list[_];
+		print(entity.Id .. entity.Name);
+		local txt = CS.YouYou.GameEntry.Localization:GetString(entity.Name);
+		print(txt);
+	end
+
 end
 
 function UITaskCtrl.onClickClose()

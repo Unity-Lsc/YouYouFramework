@@ -29,6 +29,8 @@ namespace YouYou
         public static DownloadComponent Download { get; private set; }
         public static UIComponent UI { get; private set; }
 
+        public static LuaComponent Lua { get; private set; }
+
         #endregion
 
         /// <summary>
@@ -84,6 +86,7 @@ namespace YouYou
             Resource = GetBaseComponent<ResourceComponent>();
             Download = GetBaseComponent<DownloadComponent>();
             UI = GetBaseComponent<UIComponent>();
+            Lua = GetBaseComponent<LuaComponent>();
         }
 
         /// <summary>

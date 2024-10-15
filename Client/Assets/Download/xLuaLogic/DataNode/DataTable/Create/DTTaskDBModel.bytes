@@ -1,0 +1,42 @@
+--数据访问
+DTTaskDBModel = { }
+
+local this = DTTaskDBModel;
+
+local itemTable = { }; --定义表格
+
+---加载表格数据
+function DTTaskDBModel.LoadList()
+    local ms = CS.YouYou.GameEntry.Lua:LoadDataTable("DTTask");
+    local rows = ms:ReadInt();
+    ms:ReadInt();
+
+    for _ = 1, rows, 1 do
+        itemTable[#itemTable + 1] = DTTaskEntity.New(
+                ms:ReadInt(),
+                ms:ReadUTF8String(),
+                ms:ReadInt(),
+                ms:ReadUTF8String()
+        );
+    end
+
+end
+
+---获取数据的集合
+---@return {} 实体类的集合
+function DTTaskDBModel.GetList()
+    return itemTable;
+end
+
+---根据ID获取实体
+---@param id number 要获取实体的ID
+function DTTaskDBModel.GetEntity(id)
+    local entity = nil;
+    for i = 1, #itemTable, 1 do
+        if (itemTable[i].Id == id) then
+            entity = itemTable[i];
+            break;
+        end
+    end
+    return entity;
+end

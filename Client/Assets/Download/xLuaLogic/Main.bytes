@@ -1,6 +1,11 @@
 --hotfix 热补丁
 --游戏启动的是,先执行热补丁的类
 
+--调试时开启 发布时需要注释或者删除
+package.cpath = package.cpath .. ';C:/Users/LSC/AppData/Roaming/JetBrains/IntelliJIdea2023.3/plugins/EmmyLua/debugger/emmy/windows/x64/?.dll'
+local dbg = require('emmy_core')
+dbg.tcpConnect('localhost', 9966)
+
 require "GameInit"
 
 GameInit.Init();

@@ -3,9 +3,11 @@ print('启动GameInit.lua');
 GameInit = {};
 local this = GameInit;
 
+---Lua项目的初始化入口
 function GameInit.Init()
     print('GameInit.Init');
     this.InitCtrlAndViews();
+    this.LoadDataTable();
 end
 
 ---初始化UI控制器和UI视图
@@ -13,5 +15,16 @@ function GameInit.InitCtrlAndViews()
 
     require('Modules/UITaskCtrl');
     require('Modules/UITaskView');
+
+end
+
+---加载配置表的数据
+function GameInit.LoadDataTable()
+    --每个表格的实体类和数据类都要require,并调用LoadList方法
+
+    --任务表
+    require('DataNode/DataTable/Create/DTTaskEntity');
+    require('DataNode/DataTable/Create/DTTaskDBModel');
+    DTTaskDBModel.LoadList();
 
 end
