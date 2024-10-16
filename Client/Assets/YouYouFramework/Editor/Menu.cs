@@ -3,6 +3,7 @@ using UnityEditor;
 using YouYou;
 using System.Text;
 using System.IO;
+using System.Collections.Generic;
 
 public class Menu
 {
@@ -13,6 +14,24 @@ public class Menu
         window.titleContent = new GUIContent("全局设置");
         window.Show();
 
+    }
+
+    [MenuItem("Tools/AssetBundleCreate")]
+    public static void AssetBundleCreate() {
+
+        AssetBundleWindow window = EditorWindow.GetWindow<AssetBundleWindow>();
+        window.titleContent = new GUIContent("AssetBundle打包");
+        window.Show();
+
+        //string xmlPath = Application.dataPath + "/YouYouFramework/Editor/AssetBundle/AssetBundleConfig.xml";
+        //AssetBundleDAL dal = new AssetBundleDAL(xmlPath);
+        //List<AssetBundleEntity> lst = dal.GetList();
+
+        //foreach (var item in lst)
+        //{
+        //    Debug.Log(item.Name);
+        //    Debug.Log(item.Tag);
+        //}
     }
 
     [MenuItem("Tools/生成LuaView脚本")]

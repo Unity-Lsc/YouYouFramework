@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Root>
+  <AssetBundle>
+    
+    <Item Name = "xiangzi" Tag = "Item" Version = "1" Size = "0" ToPath = "/Item/">
+      <Path Value = "Download/Prefab/RolePrefab/Item/xiangzi.prefab" />
+    </Item>
+    <Item Name = "UITask" Tag = "UI" Version = "1" Size = "0" ToPath = "/UI/">
+      <Path Value = "Download/UI/UIPrefab/FormChinese/UITask.prefab" />
+    </Item>
+    
+  </AssetBundle>
+</Root>

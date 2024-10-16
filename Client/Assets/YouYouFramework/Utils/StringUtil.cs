@@ -1,64 +1,43 @@
-using UnityEngine;
-using System.Collections;
-using System;
+
 
 /// <summary>
-/// 
+/// String的一些扩展工具类
 /// </summary>
 public static class StringUtil 
 {
-    #region IsNullOrEmpty 验证值是否为null
-
     /// <summary>
     /// 判断对象是否为Null、DBNull、Empty或空白字符串
     /// </summary>
-    /// <param name="value"></param>
-    /// <returns></returns>
-    public static bool IsNullOrEmpty(string value)
-    {
-        bool retVal = false;
+    public static bool IsNullOrEmpty(string value) {
+
         if (value == null || string.IsNullOrWhiteSpace(value.ToString()))
         {
-            retVal = true;
+            return true;
         }
-        return retVal;
+        return false; ;
     }
-
-    #endregion
 
     /// <summary>
     /// 把string类型转换成int
     /// </summary>
-    /// <param name="str"></param>
-    /// <returns></returns>
-    public static int ToInt(string str)
-    {
-        int temp = 0;
-        int.TryParse(str, out temp);
+    public static int ToInt(string str) {
+        int.TryParse(str, out int temp);
         return temp;
     }
 
     /// <summary>
     /// 把string类型转换成long
     /// </summary>
-    /// <param name="str"></param>
-    /// <returns></returns>
-    public static long ToLong(string str)
-    {
-        long temp = 0;
-        long.TryParse(str, out temp);
+    public static long ToLong(string str) {
+        long.TryParse(str, out long temp);
         return temp;
     }
 
     /// <summary>
     /// 把string类型转换成float
     /// </summary>
-    /// <param name="str"></param>
-    /// <returns></returns>
-    public static float ToFloat(string str)
-    {
-        float temp = 0;
-        float.TryParse(str, out temp);
+    public static float ToFloat(string str) {
+        float.TryParse(str, out float temp);
         return temp;
     }
 }
