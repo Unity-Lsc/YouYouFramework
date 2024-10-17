@@ -1,10 +1,7 @@
 fileFormatVersion: 2
 guid: 9833468f7f9dfd946a6bf778e6f08cce
-timeCreated: 1450605290
-licenseType: Pro
-NativeFormatImporter:
+PrefabImporter:
   externalObjects: {}
-  mainObjectFileID: 0
   userData: 
   assetBundleName: download/prefab/roleprefab/monster/role_monster_1
   assetBundleVariant: assetbundle

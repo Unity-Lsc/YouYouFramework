@@ -4065,7 +4065,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 263586147}
-  - component: {fileID: 263586146}
   m_Layer: 0
   m_Name: LightmapSet
   m_TagString: Untagged
@@ -4073,32 +4072,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &263586146
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 263586145}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f3a82bfbe2cfcd4ab0d2fddb591c0d5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lightmapFar:
-  - {fileID: 2800000, guid: 2bc6b2b934801024ebeb42f79fbc27cf, type: 3}
-  - {fileID: 2800000, guid: da24e40b585b1ce4a9502018dce9068f, type: 3}
-  lightmapNear: []
-  mode: 0
-  HasFog: 1
-  FogMode: 1
-  FogColor:
-    r: 0.72794116
-    g: 1
-    b: 0.97748476
-    a: 1
-  StartDistance: 10
-  EndDistance: 30
 --- !u!4 &263586147
 Transform:
   m_ObjectHideFlags: 0
@@ -15228,7 +15201,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 729036852}
-  - component: {fileID: 729036853}
   m_Layer: 0
   m_Name: A*
   m_TagString: Untagged
@@ -15253,123 +15225,6 @@ Transform:
   - {fileID: 622577364}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &729036853
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 729036851}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 78396926cbbfc4ac3b48fc5fc34a87d1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  astarData:
-    dataString: UEsDBBQAAAgIAABAIezgGkV/wAEAAB4DAAALACQAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFlUsFymzAQ/RedacZgAzbHOpn0EMcdyCHTTg+LtIAmQnKEiB1n/O9dgbHd6QVm3z691b6nL1b3UrDsi32A6pFlrCx5miyTeblMQx5X5bcUhYhXUblKkzQqIWSngPEGLHCHNgch+45ls7uYUKOd6e0GDg/WGsuyiDBUqpBH9JQoHusfKOvGeWQRsD2oNygVTmB0hdZKtuVZu4VDocyOdOLZUD2IGp9Q166hMx6SOsdaGj1OmwcMhXTGvkiFIxRGy4C5c/lKQslN/YtlyYpkNILFzhX0481Wq89X6lSgOgxY36FX6y6ARYUfoN2jhV1T9LYCjhsjvI335tm4HN97aZEREzpyi+asjVJSoL0RmVob7Bov7mx/C7+gtSD1/7jFK5ufZfOpe48OpKKlaafKWI7iu+m16NaoieADP7Bs6Z39JIcDdqTv6V/q6NpADBfRQFyMzDCN7hYnH0P3dvN2ovnMow7qzdD4/SdgXWP2frFt75TUON3Xw8/k1NpojdxRbFdDpiNnQy+4G40ooN1NkdKtpJZOgvqJGpQbd6FncrFLQ+vjyJGTM0NOlIawsH+Ux9Zc/JO6MgUnR/V2ODyMPP0FUEsDBBQAAAgIAABAIexdz5JFeAAAAIUAAAAJACQAbWV0YS5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0BHYyxDoIwFAD/5c3YWAhtYXVgM8bVMPS1D+jgK6HFxBj/Xep2w9194EVbCpGhh0YYIaGCebPrkqCXB+7BH/QARKeVUQ0aLV074UmT921XY6eVrtFKGCvI75Wu9kn/4mbzMgX2gWdxJ2dTHsq3eBw9XeLOuYjn8fsDUEsBAi0AFAAACAgAAEAh7OAaRX/AAQAAHgMAAAsAJAAAAAAAAAAAAAAAAAAAAGdyYXBoMC5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0BUEsBAi0AFAAACAgAAEAh7F3PkkV4AAAAhQAAAAkAJAAAAAAAAAAAAAAADQIAAG1ldGEuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAVBLBQYAAAAAAgACALgAAADQAgAAAAA=
-    upgradeData: []
-    data_backup: []
-    file_cachedStartup: {fileID: 4900000, guid: 9bcf029cd4caaf34fbbaeb57725e02c3, type: 3}
-    data_cachedStartup: []
-    cacheStartup: 1
-  showNavGraphs: 1
-  showUnwalkableNodes: 1
-  debugMode: 0
-  debugFloor: 0
-  debugRoof: 1
-  manualDebugFloorRoof: 0
-  showSearchTree: 0
-  unwalkableNodeDebugSize: 0.3
-  logPathResults: 1
-  maxNearestNodeDistance: 100
-  scanOnStartup: 1
-  fullGetNearestSearch: 0
-  prioritizeGraphs: 0
-  prioritizeGraphsLimit: 1
-  colorSettings:
-    _NodeConnection:
-      r: 1
-      g: 1
-      b: 1
-      a: 0.9
-    _UnwalkableNode:
-      r: 1
-      g: 0
-      b: 0
-      a: 0.5
-    _BoundsHandles:
-      r: 0.29
-      g: 0.454
-      b: 0.741
-      a: 0.9
-    _ConnectionLowLerp:
-      r: 0
-      g: 1
-      b: 0
-      a: 0.5
-    _ConnectionHighLerp:
-      r: 1
-      g: 0
-      b: 0
-      a: 0.5
-    _MeshEdgeColor:
-      r: 0
-      g: 0
-      b: 0
-      a: 0.5
-    _MeshColor:
-      r: 0.125
-      g: 0.686
-      b: 0
-      a: 0.19
-    _AreaColors: []
-  tagNames:
-  - Basic Ground
-  - 1
-  - 2
-  - 3
-  - 4
-  - 5
-  - 6
-  - 7
-  - 8
-  - 9
-  - 10
-  - 11
-  - 12
-  - 13
-  - 14
-  - 15
-  - 16
-  - 17
-  - 18
-  - 19
-  - 20
-  - 21
-  - 22
-  - 23
-  - 24
-  - 25
-  - 26
-  - 27
-  - 28
-  - 29
-  - 30
-  - 31
-  heuristic: 2
-  heuristicScale: 1
-  threadCount: 0
-  maxFrameTime: 1
-  minAreaSize: 0
-  limitGraphUpdates: 1
-  maxGraphUpdateFreq: 0.2
-  euclideanEmbedding:
-    mode: 0
-    seed: 0
-    pivotPointRoot: {fileID: 0}
-    spreadOutCount: 1
-  showGraphs: 1
-  lastUniqueAreaIndex: 48
 --- !u!1001 &735663549
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18515,7 +18370,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 995726253}
-  - component: {fileID: 995726252}
   m_Layer: 0
   m_Name: WroldMapSceneCtrl
   m_TagString: Untagged
@@ -18523,19 +18377,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &995726252
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 995726251}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 86ca082aebbbfb342ab7e7f7c5a0777a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_PlayerBornPos: {fileID: 849528800}
 --- !u!4 &995726253
 Transform:
   m_ObjectHideFlags: 0
@@ -21103,7 +20944,8 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 114000013900811424, guid: dad87ef6688f50848a4ba7de1a06bcd5, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -40091,7 +39933,7 @@ ParticleSystem:
         m_RotationOrder: 0
     startSizeY:
       serializedVersion: 2
-      minMaxState: 0
+      minMaxState: 3
       scalar: 1
       minScalar: 1
       maxCurve:
@@ -40144,7 +39986,7 @@ ParticleSystem:
         m_RotationOrder: 4
     startSizeZ:
       serializedVersion: 2
-      minMaxState: 0
+      minMaxState: 3
       scalar: 1
       minScalar: 1
       maxCurve:

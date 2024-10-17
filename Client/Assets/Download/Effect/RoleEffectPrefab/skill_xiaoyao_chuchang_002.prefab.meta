@@ -1,8 +1,7 @@
 fileFormatVersion: 2
 guid: 3afd172debe43f841a504bdf355191e9
-NativeFormatImporter:
+PrefabImporter:
   externalObjects: {}
-  mainObjectFileID: 0
   userData: 
-  assetBundleName: download/effect/roleeffectprefab/skill_xiaoyao_chuchang_002
-  assetBundleVariant: assetbundle
+  assetBundleName: 
+  assetBundleVariant: 

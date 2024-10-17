@@ -1,8 +1,7 @@
 fileFormatVersion: 2
 guid: ad4e95b4e0d0156488ea603771e3cf57
-NativeFormatImporter:
+PrefabImporter:
   externalObjects: {}
-  mainObjectFileID: 0
   userData: 
   assetBundleName: download/prefab/effect/role/cike/role_mainplayer_cike_effect_phy_1
   assetBundleVariant: assetbundle

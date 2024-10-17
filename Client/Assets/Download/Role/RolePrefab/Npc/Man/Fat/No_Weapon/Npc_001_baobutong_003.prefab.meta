@@ -1,8 +1,7 @@
 fileFormatVersion: 2
 guid: 1df243477399b774685601b886b6b58b
-NativeFormatImporter:
+PrefabImporter:
   externalObjects: {}
-  mainObjectFileID: 0
   userData: 
-  assetBundleName: download/role/roleprefab/npc/man/fat/no_weapon/npc_001_baobutong_003
-  assetBundleVariant: assetbundle
+  assetBundleName: 
+  assetBundleVariant: 

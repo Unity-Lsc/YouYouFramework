@@ -1,8 +1,7 @@
 fileFormatVersion: 2
 guid: 79ea882660e972d4096c4b5324664531
-NativeFormatImporter:
+PrefabImporter:
   externalObjects: {}
-  mainObjectFileID: 0
   userData: 
-  assetBundleName: download/role/roleprefab/npc/building/fb_banghui_jubaopen04
-  assetBundleVariant: assetbundle
+  assetBundleName: 
+  assetBundleVariant: 

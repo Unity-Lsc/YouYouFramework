@@ -1,8 +1,7 @@
 fileFormatVersion: 2
 guid: ce03b3ddd7ca6f942a79a1e77827575e
-NativeFormatImporter:
+PrefabImporter:
   externalObjects: {}
-  mainObjectFileID: 0
   userData: 
   assetBundleName: download/prefab/effect/role/cike/role_mainplayer_cike_effect_skill_3
   assetBundleVariant: assetbundle

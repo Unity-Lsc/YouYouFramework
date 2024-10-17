@@ -1,8 +1,7 @@
 fileFormatVersion: 2
 guid: 9b03a50646d89244880c57f177f37ee8
-NativeFormatImporter:
+PrefabImporter:
   externalObjects: {}
-  mainObjectFileID: 0
   userData: 
-  assetBundleName: download/effect/roleeffectprefab/boss_fushiwubian_xianjing
-  assetBundleVariant: assetbundle
+  assetBundleName: 
+  assetBundleVariant: 

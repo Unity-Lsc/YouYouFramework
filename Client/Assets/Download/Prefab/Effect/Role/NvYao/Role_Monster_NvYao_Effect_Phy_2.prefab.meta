@@ -1,8 +1,7 @@
 fileFormatVersion: 2
 guid: f94162dc400f9894e9d22bf7efb54110
-NativeFormatImporter:
+PrefabImporter:
   externalObjects: {}
-  mainObjectFileID: 0
   userData: 
   assetBundleName: download/prefab/effect/role/nvyao/role_monster_nvyao_effect_phy_2
   assetBundleVariant: assetbundle

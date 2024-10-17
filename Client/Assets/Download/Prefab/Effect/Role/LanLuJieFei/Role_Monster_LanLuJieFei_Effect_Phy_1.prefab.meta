@@ -1,8 +1,7 @@
 fileFormatVersion: 2
 guid: 95c19cd9ccacce24f99b0ce436dcf77a
-NativeFormatImporter:
+PrefabImporter:
   externalObjects: {}
-  mainObjectFileID: 0
   userData: 
   assetBundleName: download/prefab/effect/role/lanlujiefei/role_monster_lanlujiefei_effect_phy_1
   assetBundleVariant: assetbundle

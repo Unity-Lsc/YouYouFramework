@@ -24,19 +24,19 @@ public class AssetBundleEntity
     public string Tag;
 
     /// <summary>
-    /// 大小
+    /// 是否为文件夹
     /// </summary>
-    public long Size;
+    public bool IsFolder;
 
     /// <summary>
-    /// 版本号
+    /// 是否是初始资源
     /// </summary>
-    public int Version;
+    public bool IsFirstData;
 
     /// <summary>
-    /// 打包保存的路径
+    /// 是否是被选中的资源(Tag是否选中)
     /// </summary>
-    public string ToPath;
+    public bool IsSelected;
 
     private List<string> mPathList = new List<string>();
     /// <summary>

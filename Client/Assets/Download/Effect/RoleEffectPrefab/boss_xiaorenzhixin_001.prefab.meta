@@ -1,8 +1,7 @@
 fileFormatVersion: 2
 guid: e829f91535dc11942b99c1d552a51fc8
-NativeFormatImporter:
+PrefabImporter:
   externalObjects: {}
-  mainObjectFileID: 0
   userData: 
-  assetBundleName: download/effect/roleeffectprefab/boss_xiaorenzhixin_001
-  assetBundleVariant: assetbundle
+  assetBundleName: 
+  assetBundleVariant: 

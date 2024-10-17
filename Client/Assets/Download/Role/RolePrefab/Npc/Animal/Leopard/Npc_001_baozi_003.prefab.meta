@@ -1,8 +1,7 @@
 fileFormatVersion: 2
 guid: b9148153e8205e240b3767cee56db401
-NativeFormatImporter:
+PrefabImporter:
   externalObjects: {}
-  mainObjectFileID: 0
   userData: 
-  assetBundleName: download/role/roleprefab/npc/animal/leopard/npc_001_baozi_003
-  assetBundleVariant: assetbundle
+  assetBundleName: 
+  assetBundleVariant: 

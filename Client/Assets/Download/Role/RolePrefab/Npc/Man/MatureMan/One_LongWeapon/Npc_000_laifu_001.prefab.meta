@@ -1,8 +1,7 @@
 fileFormatVersion: 2
 guid: 2bc0727f832ce4445a4fc1ba2aa50461
-NativeFormatImporter:
+PrefabImporter:
   externalObjects: {}
-  mainObjectFileID: 0
   userData: 
-  assetBundleName: download/role/roleprefab/npc/man/matureman/one_longweapon/npc_000_laifu_001
-  assetBundleVariant: assetbundle
+  assetBundleName: 
+  assetBundleVariant: 

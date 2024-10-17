@@ -1,8 +1,7 @@
 fileFormatVersion: 2
 guid: af75bf0e3e6271840bd9b080ac2851dd
-NativeFormatImporter:
+PrefabImporter:
   externalObjects: {}
-  mainObjectFileID: 0
   userData: 
-  assetBundleName: download/effect/roleeffectprefab/dali_liumaishenjian_001
-  assetBundleVariant: assetbundle
+  assetBundleName: 
+  assetBundleVariant: 

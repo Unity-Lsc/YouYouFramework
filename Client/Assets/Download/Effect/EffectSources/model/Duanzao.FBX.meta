@@ -1,27 +1,49 @@
 fileFormatVersion: 2
 guid: 612f3be0d54725b478fb7ea39c8a69db
 ModelImporter:
-  serializedVersion: 23
-  fileIDToRecycleName:
-    100000: Bone01
-    100002: //RootNode
-    100004: Plane01
-    400000: Bone01
-    400002: //RootNode
-    400004: Plane01
-    4300000: Plane01
-    7400000: Take 001
-    9500000: //RootNode
-    11100000: //RootNode
-    13700000: Plane01
+  serializedVersion: 22200
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: Bone01
+  - first:
+      1: 100002
+    second: //RootNode
+  - first:
+      1: 100004
+    second: Plane01
+  - first:
+      4: 400000
+    second: Bone01
+  - first:
+      4: 400002
+    second: //RootNode
+  - first:
+      4: 400004
+    second: Plane01
+  - first:
+      43: 4300000
+    second: Plane01
+  - first:
+      74: 7400000
+    second: Take 001
+  - first:
+      95: 9500000
+    second: //RootNode
+  - first:
+      111: 11100000
+    second: //RootNode
+  - first:
+      137: 13700000
+    second: Plane01
   externalObjects:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: 'Material #25'
+      name: Material #25
     second: {fileID: 2100000, guid: 70c60b91c59cf034db8ea0f77ff85aa0, type: 2}
   materials:
-    importMaterials: 1
+    materialImportMode: 1
     materialName: 0
     materialSearch: 1
     materialLocation: 0
@@ -30,9 +52,8 @@ ModelImporter:
     bakeSimulation: 0
     resampleCurves: 1
     optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
     motionNodeName: 
-    rigImportErrors: 
-    rigImportWarnings: 
     animationImportErrors: 
     animationImportWarnings: 
     animationRetargetingWarnings: 
@@ -53,34 +74,49 @@ ModelImporter:
     globalScale: 0.01
     meshCompression: 0
     addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
     importVisibility: 0
     importBlendShapes: 1
     importCameras: 0
     importLights: 0
+    nodeNameCollisionStrategy: 0
+    fileIdsGeneration: 1
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
-    optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
+    bakeAxisConversion: 0
     preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
     indexFormat: 1
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 0
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
     secondaryUVPackMargin: 4
     useFileScale: 0
-    previousCalculatedGlobalScale: 1
-    hasPreviousCalculatedGlobalScale: 0
+    strictVertexDataChecks: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
     tangentImportMode: 4
     normalCalculationMode: 0
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
   importAnimation: 1
-  copyAvatar: 0
   humanDescription:
-    serializedVersion: 2
+    serializedVersion: 3
     human: []
     skeleton: []
     armTwist: 0.5
@@ -90,15 +126,20 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
+    globalScale: 0.01
     rootMotionBoneName: 
-    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 0
   lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 1
   humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 0
+  importBlendShapeDeformPercent: 0
+  remapMaterialsIfMaterialImportModeIsNone: 1
   additionalBone: 0
   userData: 
-  assetBundleName: download/effect/effectsources/model/duanzao
-  assetBundleVariant: assetbundle
+  assetBundleName: 
+  assetBundleVariant: 

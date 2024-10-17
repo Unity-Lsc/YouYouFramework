@@ -1,8 +1,7 @@
 fileFormatVersion: 2
 guid: b6d3514b0fda4fc40896c2d84306113c
-NativeFormatImporter:
+PrefabImporter:
   externalObjects: {}
-  mainObjectFileID: 0
   userData: 
-  assetBundleName: download/effect/roleeffectprefab/buff_fantan
-  assetBundleVariant: assetbundle
+  assetBundleName: 
+  assetBundleVariant: 

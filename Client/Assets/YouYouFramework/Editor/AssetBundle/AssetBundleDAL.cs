@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Xml.Linq;
 
@@ -39,14 +40,13 @@ public class AssetBundleDAL
             entity.Key = "key" + ++index;
             entity.Name = item.Attribute("Name").Value;
             entity.Tag = item.Attribute("Tag").Value;
-            entity.Version = StringUtil.ToInt(item.Attribute("Tag").Value);
-            entity.Size = StringUtil.ToLong(item.Attribute("Size").Value);
-            entity.ToPath = item.Attribute("ToPath").Value;
+            entity.IsFolder = item.Attribute("IsFolder").Value.Equals("True", StringComparison.CurrentCultureIgnoreCase);
+            entity.IsFirstData = item.Attribute("IsFirstData").Value.Equals("True", StringComparison.CurrentCultureIgnoreCase);
 
             IEnumerable<XElement> pathList = item.Elements("Path");
             foreach (XElement path in pathList)
             {
-                entity.PathList.Add(string.Format("Assets/{0}", path.Attribute("Value").Value));
+                entity.PathList.Add(path.Attribute("Value").Value);
             }
             mDataList.Add(entity);
         }

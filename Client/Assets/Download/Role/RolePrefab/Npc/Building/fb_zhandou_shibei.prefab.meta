@@ -1,8 +1,7 @@
 fileFormatVersion: 2
 guid: 8cd6a479338009f45a7f6252953cc5e8
-NativeFormatImporter:
+PrefabImporter:
   externalObjects: {}
-  mainObjectFileID: 0
   userData: 
-  assetBundleName: download/role/roleprefab/npc/building/fb_zhandou_shibei
-  assetBundleVariant: assetbundle
+  assetBundleName: 
+  assetBundleVariant: 

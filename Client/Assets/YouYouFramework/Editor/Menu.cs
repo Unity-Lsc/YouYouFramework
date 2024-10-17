@@ -20,18 +20,9 @@ public class Menu
     public static void AssetBundleCreate() {
 
         AssetBundleWindow window = EditorWindow.GetWindow<AssetBundleWindow>();
-        window.titleContent = new GUIContent("AssetBundle打包");
+        window.titleContent = new GUIContent("资源打包打包");
         window.Show();
-
-        //string xmlPath = Application.dataPath + "/YouYouFramework/Editor/AssetBundle/AssetBundleConfig.xml";
-        //AssetBundleDAL dal = new AssetBundleDAL(xmlPath);
-        //List<AssetBundleEntity> lst = dal.GetList();
-
-        //foreach (var item in lst)
-        //{
-        //    Debug.Log(item.Name);
-        //    Debug.Log(item.Tag);
-        //}
+        
     }
 
     [MenuItem("Tools/生成LuaView脚本")]

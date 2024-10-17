@@ -20,7 +20,7 @@ namespace YouYou
             //1.实例化xlua引擎
             luaEnv = new LuaEnv();
 
-#if DISABLE_ASSETBUNDLE && UNITY_EDITOR
+#if DISABLE_ASSETBUNDLE
             //2.设置xLua的脚本路径
             luaEnv.DoString(string.Format("package.path = '{0}/?.bytes'", Application.dataPath + "/Download/xLuaLogic/"));
 #else

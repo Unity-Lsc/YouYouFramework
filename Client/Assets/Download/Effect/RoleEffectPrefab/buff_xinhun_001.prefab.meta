@@ -1,8 +1,7 @@
 fileFormatVersion: 2
 guid: 4dc64d9d756836f489894b34f3f2861c
-NativeFormatImporter:
+PrefabImporter:
   externalObjects: {}
-  mainObjectFileID: 0
   userData: 
-  assetBundleName: download/effect/roleeffectprefab/buff_xinhun_001
-  assetBundleVariant: assetbundle
+  assetBundleName: 
+  assetBundleVariant: 

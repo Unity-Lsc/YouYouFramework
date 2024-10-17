@@ -1,8 +1,7 @@
 fileFormatVersion: 2
 guid: 61c4429ea02ec944f956e1e2fba1a1de
-NativeFormatImporter:
+PrefabImporter:
   externalObjects: {}
-  mainObjectFileID: 0
   userData: 
   assetBundleName: download/prefab/effect/role/jiakechong/role_monster_jiakechong_effect_skill_1
   assetBundleVariant: assetbundle

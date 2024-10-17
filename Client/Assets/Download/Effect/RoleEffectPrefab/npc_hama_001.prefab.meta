@@ -1,8 +1,7 @@
 fileFormatVersion: 2
 guid: 63206df8fbb2af34899989bb4c7ccfa8
-NativeFormatImporter:
+PrefabImporter:
   externalObjects: {}
-  mainObjectFileID: 0
   userData: 
-  assetBundleName: download/effect/roleeffectprefab/npc_hama_001
-  assetBundleVariant: assetbundle
+  assetBundleName: 
+  assetBundleVariant: 
